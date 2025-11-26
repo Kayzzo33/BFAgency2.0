@@ -39,12 +39,12 @@ export const TeamSection = () => {
              <div className={cn("absolute top-[20%] -left-[10%] z-30 text-left hidden md:block transition-all duration-700 delay-500", isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10")}>
                 <h4 className="text-brand-yellow font-heading font-bold text-3xl mb-1">Geriel Soglia</h4>
                 <div className="w-24 h-[2px] bg-white mb-1 shadow-[0_0_10px_rgba(255,255,255,0.8)]"></div>
-                <p className="text-white text-xl font-light">Gestor de tráfego</p>
+                <p className="text-white text-xl font-light">CEO e Gestor de Tráfego</p>
              </div>
              <div className="md:hidden w-full text-center mb-6">
                 <h4 className="text-brand-yellow font-heading font-bold text-3xl">Geriel Soglia</h4>
                 <div className="w-12 h-[2px] bg-white mx-auto my-2"></div>
-                <p className="text-white text-lg">Gestor de tráfego</p>
+                <p className="text-white text-lg">CEO e Gestor de Tráfego</p>
              </div>
              {ASSETS.teamFrame && (
                <div className="absolute bottom-0 left-[38%] -translate-x-1/2 w-[90%] h-[70%] z-0 opacity-60">
@@ -57,12 +57,12 @@ export const TeamSection = () => {
              <div className={cn("absolute top-[20%] -left-[10%] z-30 text-left hidden md:block transition-all duration-700 delay-700", isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10")}>
                 <h4 className="text-brand-yellow font-heading font-bold text-3xl mb-1">Marcos Júnior</h4>
                 <div className="w-24 h-[2px] bg-white mb-1 shadow-[0_0_10px_rgba(255,255,255,0.8)]"></div>
-                <p className="text-white text-xl font-light">Gestor de tráfego</p>
+                <p className="text-white text-xl font-light">Diretor e Gerente Comercial</p>
              </div>
              <div className="md:hidden w-full text-center mb-6">
                 <h4 className="text-brand-yellow font-heading font-bold text-3xl">Marcos Júnior</h4>
                 <div className="w-12 h-[2px] bg-white mx-auto my-2"></div>
-                <p className="text-white text-lg">Gestor de tráfego</p>
+                <p className="text-white text-lg">Diretor e Gerente Comercial</p>
              </div>
              {ASSETS.teamFrame && (
                <div className="absolute bottom-0 left-[38%] -translate-x-1/2 w-[90%] h-[70%] z-0 opacity-60">
