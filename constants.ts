@@ -6,23 +6,22 @@ import { Target, TrendingUp, MessageCircle, Cpu, ScanEye, Users } from 'lucide-r
 export const ASSETS = {
   heroBg: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763568231/BackGround_Hero_boqfkf.jpg", 
   logoMain: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763570166/logo_hero_qw4x5l.png",
+  // logoText removido do uso, mantido aqui apenas se necessário futuramente ou para evitar quebras se referenciado
   logoText: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763570163/agencia_logo_hero_dr6zrq.png",
   heroLogo: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763569572/Logo_Preta_p7evqr.png",
   logoWatermark: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763569572/logo_branco_z9jsgg.png",
   introBg: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763573021/fundo_section2_rys2qf.jpg",
   notebook: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763573334/notebook_cffgac.png",
   arrow: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763573324/SETAS_o6qbsb.png",
-  // Logo atualizada para o Footer e Navbar
   logoYellow: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763569572/logo_amarela_gb7rgq.png",
   teamBg: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763576420/Fundobsluan_tagksa.jpg",
   teamPerson1: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763575835/BFCOMSOMBRA_lnyxdd.png",
   teamPerson2: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763575823/LuanComSombra_zs8shq.png",
-  // CRÍTICO: Esta imagem é necessária para o TeamSection.tsx. Não remova.
   teamFrame: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763576406/QuadradoLinha_rtqqjk.png", 
   teamLogo: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763569572/Logo_Preta_p7evqr.png",
   notebookBlack: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763671478/notebookblack_-_Editado_gba0ri.png",
   notebookBlur: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763581375/notebookblackdesfocado_ndrxwe.png",
-  partnerPerson: "https://res.cloudinary.com/dxhlvrach/image/upload/v1763569573/bf_cinza_v5jmst.png",
+  partnerPerson: "https://res.cloudinary.com/dxhlvrach/image/upload/v1764173487/c34d1c07-e1cc-4855-92cf-c7923359ecbd_nwf2zi.jpg",
 };
 
 // Data
@@ -48,9 +47,7 @@ export const TESTIMONIALS = [
   { name: "Fernanda Lima", role: "Advogada", text: "Conseguiram segmentar meu público perfeitamente." },
 ];
 
-// Lista UNIFICADA: Antigas + Novas
 export const SOLUTIONS_LIST = [
-  // Itens Originais
   "Criação de campanhas estratégicas",
   "Gerenciamento de métricas",
   "Foco em resultados exponenciais",
@@ -58,7 +55,6 @@ export const SOLUTIONS_LIST = [
   "Análise de criativos",
   "Análise de Copy",
   "Relatório Mensal com dados precisos",
-  // Novos Itens Solicitados
   "Criação de processo comercial otimizado",
   "Automação com IA para atendimento sem dores de cabeça",
   "Gerenciamento das Redes",

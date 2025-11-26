@@ -1,22 +1,34 @@
 
 import React from 'react';
 import { ASSETS } from '../../constants';
+import { Reveal } from '../Reveal';
 
 export const PartnershipSection = () => {
   return (
-    <section className="relative bg-black pt-48 pb-0 z-20 overflow-visible">
+    <section className="relative bg-black pt-32 pb-32 z-20 overflow-visible">
        <div className="container mx-auto px-4 relative">
-          <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-8 lg:gap-0 max-w-7xl mx-auto relative z-10 pb-12 lg:pb-24">
-             <img src={ASSETS.logoYellow} alt="BF" className="w-32 lg:w-48 h-auto object-contain shrink-0 relative z-20 lg:mr-12" />
-             <div className="bg-brand-yellow rounded-3xl p-8 md:p-12 lg:pr-64 shadow-[0_0_30px_rgba(255,193,7,0.2)] relative z-10 w-full lg:w-auto lg:min-w-[650px]">
-                  <h2 className="text-2xl md:text-3xl lg:text-5xl font-heading font-bold text-black leading-tight max-w-2xl">
-                       “Nós não queremos clientes, <span className="font-black">queremos</span> <br/>parceiros!”
+          <Reveal>
+            <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-stretch justify-center gap-0">
+               {/* Box Amarelo com Texto */}
+               <div className="bg-brand-yellow rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none p-10 md:p-16 flex-1 flex flex-col justify-center items-start shadow-[0_0_30px_rgba(255,193,7,0.2)] z-10">
+                  <img src={ASSETS.logoMain} alt="BF" className="w-24 md:w-32 h-auto object-contain mb-6 filter brightness-0" />
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-black leading-tight">
+                       “Nós não queremos clientes, <br/><span className="font-black text-black/80">queremos parceiros!”</span>
                   </h2>
-             </div>
-          </div>
-          <div className="relative lg:absolute lg:bottom-0 lg:right-0 xl:right-20 w-[300px] md:w-[450px] lg:w-[500px] z-30 pointer-events-none flex justify-center mx-auto lg:mx-0 mt-[-40px] lg:mt-0">
-             <img src={ASSETS.partnerPerson} alt="Parceiro" className="w-full h-auto object-contain drop-shadow-2xl transform lg:translate-y-0 origin-bottom" /> 
-          </div>
+               </div>
+
+               {/* Imagem como complemento (Card) */}
+               <div className="relative w-full md:w-[320px] h-[300px] md:h-auto overflow-hidden rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none z-10">
+                  <img 
+                    src={ASSETS.partnerPerson} 
+                    alt="Parceiros" 
+                    className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700" 
+                  />
+                  {/* Overlay sutil para integração */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:bg-gradient-to-l md:from-black/20 md:to-transparent"></div>
+               </div>
+            </div>
+          </Reveal>
        </div>
     </section>
   )

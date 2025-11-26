@@ -19,27 +19,19 @@ export const Navbar = ({ onOpenModal }: { onOpenModal: () => void }) => {
       <nav 
         className={cn(
           "pointer-events-auto transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] flex items-center justify-between",
+          // Ajuste de altura e padding: Adicionei mais padding vertical (py-4 e py-10) e margin-top para descolar do topo
           isScrolled 
-            ? "mt-6 w-[92%] md:w-fit bg-black/70 backdrop-blur-xl border border-white/10 rounded-full px-4 py-3 shadow-[0_0_30px_rgba(0,0,0,0.5)] md:gap-12" 
-            : "w-full max-w-7xl px-6 py-8 bg-transparent md:gap-0"
+            ? "mt-6 w-[92%] md:w-fit bg-black/70 backdrop-blur-xl border border-white/10 rounded-full px-8 py-4 shadow-[0_0_30px_rgba(0,0,0,0.5)] md:gap-12" 
+            : "w-full max-w-7xl px-6 py-10 mt-2 bg-transparent md:gap-0"
         )}
       >
         <div className="flex items-center gap-3">
+          {/* Apenas Logo Principal (ícone), removido logoText */}
           <img 
             src={ASSETS.logoMain} 
             alt="BF Logo" 
-            className="h-8 w-auto object-contain transition-transform hover:scale-110" 
+            className="h-10 w-auto object-contain transition-transform hover:scale-110" 
           />
-          <div className={cn(
-            "overflow-hidden transition-all duration-500 ease-in-out flex items-center",
-            isScrolled ? "w-0 opacity-0" : "w-24 sm:w-32 opacity-100"
-          )}>
-            <img 
-              src={ASSETS.logoText} 
-              alt="Agência" 
-              className="h-6 sm:h-8 w-auto object-contain ml-2" 
-            />
-          </div>
         </div>
 
         <div className="hidden md:flex items-center gap-8">
@@ -53,7 +45,7 @@ export const Navbar = ({ onOpenModal }: { onOpenModal: () => void }) => {
             onClick={onOpenModal}
             className={cn(
               "bg-brand-yellow hover:bg-yellow-400 text-black font-bold rounded-full transition-all hover:shadow-[0_0_15px_rgba(255,193,7,0.4)] hover:-translate-y-0.5 whitespace-nowrap",
-              isScrolled ? "px-5 py-2 text-sm" : "px-6 py-2 shadow-xl"
+              isScrolled ? "px-5 py-2 text-sm" : "px-6 py-3 shadow-xl"
             )}
           >
             Falar com Especialista
@@ -67,7 +59,7 @@ export const Navbar = ({ onOpenModal }: { onOpenModal: () => void }) => {
         </div>
 
         {isMenuOpen && (
-          <div className="absolute top-full mt-4 left-0 right-0 bg-zinc-900/95 backdrop-blur-lg border border-white/10 rounded-2xl p-4 flex flex-col gap-4 md:hidden animate-[fadeIn_0.2s] shadow-2xl mx-4">
+          <div className="absolute top-full mt-4 left-0 right-0 bg-zinc-900/95 backdrop-blur-lg border border-white/10 rounded-2xl p-4 flex flex-col gap-4 md:hidden animate-[fadeIn_0.2s] shadow-2xl mx-4 pointer-events-auto">
             <a href="#home" className="text-white p-2 text-center font-medium hover:text-brand-yellow" onClick={() => setIsMenuOpen(false)}>Início</a>
             <a href="#about" className="text-white p-2 text-center font-medium hover:text-brand-yellow" onClick={() => setIsMenuOpen(false)}>Quem Somos</a>
             <a href="#services" className="text-white p-2 text-center font-medium hover:text-brand-yellow" onClick={() => setIsMenuOpen(false)}>Serviços</a>

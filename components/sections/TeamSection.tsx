@@ -46,9 +46,11 @@ export const TeamSection = () => {
                 <div className="w-12 h-[2px] bg-white mx-auto my-2"></div>
                 <p className="text-white text-lg">Gestor de tráfego</p>
              </div>
-             <div className="absolute bottom-0 left-[38%] -translate-x-1/2 w-[90%] h-[70%] z-0 opacity-60">
-                <img src={ASSETS.teamFrame} alt="" className="w-full h-full object-contain" />
-             </div>
+             {ASSETS.teamFrame && (
+               <div className="absolute bottom-0 left-[38%] -translate-x-1/2 w-[90%] h-[70%] z-0 opacity-60">
+                  <img src={ASSETS.teamFrame} alt="" className="w-full h-full object-contain" />
+               </div>
+             )}
              <img src={ASSETS.teamPerson1} alt="Geriel" className="relative z-10 w-full h-auto object-contain drop-shadow-2xl transition-transform duration-500 hover:scale-105 origin-bottom" />
           </div>
           <div className="relative w-full max-w-[550px] flex flex-col items-center group">
@@ -62,9 +64,11 @@ export const TeamSection = () => {
                 <div className="w-12 h-[2px] bg-white mx-auto my-2"></div>
                 <p className="text-white text-lg">Gestor de tráfego</p>
              </div>
-             <div className="absolute bottom-0 left-[38%] -translate-x-1/2 w-[90%] h-[70%] z-0 opacity-60">
-                <img src={ASSETS.teamFrame} alt="" className="w-full h-full object-contain" />
-             </div>
+             {ASSETS.teamFrame && (
+               <div className="absolute bottom-0 left-[38%] -translate-x-1/2 w-[90%] h-[70%] z-0 opacity-60">
+                  <img src={ASSETS.teamFrame} alt="" className="w-full h-full object-contain" />
+               </div>
+             )}
              <img src={ASSETS.teamPerson2} alt="Marcos" className="relative z-10 w-full h-auto object-contain drop-shadow-2xl transition-transform duration-500 hover:scale-105 origin-bottom" />
           </div>
         </div>
