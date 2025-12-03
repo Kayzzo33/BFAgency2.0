@@ -26,11 +26,15 @@ export const Navbar = ({ onOpenModal }: { onOpenModal: () => void }) => {
         )}
       >
         <div className="flex items-center gap-3">
-          {/* Apenas Logo Principal (ícone), removido logoText */}
           <img 
             src={ASSETS.logoMain} 
             alt="BF Logo" 
             className="h-10 w-auto object-contain transition-transform hover:scale-110" 
+          />
+          <img 
+            src={ASSETS.logoText} 
+            alt="Agência" 
+            className="h-6 md:h-8 w-auto object-contain transition-all duration-300" 
           />
         </div>
 
