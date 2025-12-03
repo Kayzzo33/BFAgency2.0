@@ -21,22 +21,26 @@ export const Footer = () => (
           <h4 className="text-white font-bold mb-6 uppercase tracking-wider">Contato</h4>
           <ul className="space-y-4">
             <li className="flex items-center gap-3 text-gray-400 hover:text-brand-yellow transition-colors"><Phone size={18} className="text-brand-yellow" /><span>+55 73 9830-6902</span></li>
-            <li className="flex items-center gap-3 text-gray-400 hover:text-brand-yellow transition-colors"><Mail size={18} className="text-brand-yellow" /><span>onzycompany@gmail.com</span></li>
+            <li className="flex items-center gap-3 text-gray-400 hover:text-brand-yellow transition-colors"><Mail size={18} className="text-brand-yellow" /><span>bfagencia1@gmail.com</span></li>
             <li className="flex items-center gap-3 text-gray-400"><div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div><span>Disponível agora para novos projetos</span></li>
           </ul>
         </div>
         <div>
           <h4 className="text-white font-bold mb-6 uppercase tracking-wider">Social</h4>
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-gray-400 hover:bg-brand-yellow hover:text-black transition-all"><Instagram size={20} /></a>
+            <a href="https://www.instagram.com/_bfagencia/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-gray-400 hover:bg-brand-yellow hover:text-black transition-all"><Instagram size={20} /></a>
             <a href="#" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-gray-400 hover:bg-brand-yellow hover:text-black transition-all"><Facebook size={20} /></a>
             <a href="#" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-gray-400 hover:bg-brand-yellow hover:text-black transition-all"><Linkedin size={20} /></a>
           </div>
         </div>
       </div>
-      <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
-        <p>&copy; {new Date().getFullYear()} BF Agência. Todos os direitos reservados.</p>
-        <p>Desenvolvido com Tecnologia React & Gemini AI</p>
+      <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-start items-start md:items-center gap-4 text-xs text-gray-600">
+        <p>
+          &copy; {new Date().getFullYear()} <a href="https://www.instagram.com/_bfagencia/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition-colors">BF Agência</a>. Todos os direitos reservados.
+        </p>
+        <p className="md:ml-4">
+          Desenvolvido por <a href="https://www.instagram.com/onzy.company/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition-colors font-bold">Onzy Company</a>
+        </p>
       </div>
     </div>
   </footer>

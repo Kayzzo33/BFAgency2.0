@@ -19,7 +19,7 @@ export const Navbar = ({ onOpenModal }: { onOpenModal: () => void }) => {
       <nav 
         className={cn(
           "pointer-events-auto transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] flex items-center justify-between",
-          // Ajuste de altura e padding: Adicionei mais padding vertical (py-4 e py-10) e margin-top para descolar do topo
+          // Layout da Navbar: Encolhe e adiciona fundo ao rolar
           isScrolled 
             ? "mt-6 w-[92%] md:w-fit bg-black/70 backdrop-blur-xl border border-white/10 rounded-full px-8 py-4 shadow-[0_0_30px_rgba(0,0,0,0.5)] md:gap-12" 
             : "w-full max-w-7xl px-6 py-10 mt-2 bg-transparent md:gap-0"
@@ -31,11 +31,19 @@ export const Navbar = ({ onOpenModal }: { onOpenModal: () => void }) => {
             alt="BF Logo" 
             className="h-10 w-auto object-contain transition-transform hover:scale-110" 
           />
-          <img 
-            src={ASSETS.logoText} 
-            alt="Agência" 
-            className="h-6 md:h-8 w-auto object-contain transition-all duration-300" 
-          />
+          {/* LogoText: Visível apenas em Desktop/Tablet (md:block) e quando NÃO está rolado */}
+          <div 
+             className={cn(
+               "hidden md:flex overflow-hidden transition-all duration-500 ease-in-out",
+               isScrolled ? "max-w-0 opacity-0" : "max-w-[200px] opacity-100"
+             )}
+          >
+            <img 
+              src={ASSETS.logoText} 
+              alt="Agência" 
+              className="h-8 w-auto object-contain" 
+            />
+          </div>
         </div>
 
         <div className="hidden md:flex items-center gap-8">

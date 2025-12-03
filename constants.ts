@@ -72,29 +72,29 @@ export const EXTENDED_TEAM = [
   { 
     name: "Anne", 
     role: "Setor Administrativo", 
-    instagram: "https://www.instagram.com/bf.agencia/", 
+    instagram: "https://www.instagram.com/anneujjo/", 
     image: "https://res.cloudinary.com/djpdiwdxt/image/upload/v1764785473/Design_sem_nome_33_kbp3ml.png", 
     active: true
   },
   { 
     name: "Gleice", 
     role: "Suporte ao cliente", 
-    instagram: "https://www.instagram.com/bf.agencia/", 
+    instagram: "https://www.instagram.com/gleh_01/", 
     image: "https://res.cloudinary.com/djpdiwdxt/image/upload/v1764785473/Design_sem_nome_34_juikmo.png",
     active: true 
   },
   { 
-    name: "Em breve", 
-    role: "Vaga Aberta", 
-    instagram: "", 
-    image: "",
-    active: false
+    name: "Ytallo", 
+    role: "Gestor de Tráfego", 
+    instagram: "https://www.instagram.com/o.ytallo/", 
+    image: "https://res.cloudinary.com/djpdiwdxt/image/upload/v1764789524/Design_sem_nome_36_uvsfcy.png",
+    active: true
   },
   { 
-    name: "Em breve", 
-    role: "Vaga Aberta", 
-    instagram: "", 
-    image: "",
-    active: false
+    name: "Evinho", 
+    role: "Especialista em Google meu Negócio", 
+    instagram: "https://www.instagram.com/evin_san_?igsh=NGN4MmN0MTF4b3ow", 
+    image: "https://res.cloudinary.com/djpdiwdxt/image/upload/v1764789524/Design_sem_nome_35_wknqat.png",
+    active: true
   },
 ];
